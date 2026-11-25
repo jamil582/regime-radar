@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regime Radar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5" opacity=".5"/><path d="M12 12 L19 6"/>
+    </svg>
+    Regime Radar
+  </div>
+  <div class="chips" id="model-chips"></div>
+  <div class="spacer"></div>
+  <span class="muted small" id="refreshed"></span>
+  <button class="btn" id="theme-toggle" title="Toggle light/dark">◐</button>
+  <button class="btn primary" id="refresh">Refresh data</button>
+</header>
+
+<main>
+  <section class="card span-12">
+    <div class="card-head"><div>
+      <h2>Watchlist</h2>
+      <p class="sub">Daily closes, last 60 sessions · 1-day and 1-month change</p>
+    </div></div>
+    <div id="price-note"></div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section class="card span-7">
+    <div class="card-head"><div>
+      <h2>Regime heat</h2>
+      <p class="sub">Each headline is matched to a theme by Embed 5 similarity to the theme's description. Heat = sum of
+        Command A+ materiality scores, decayed with a 7-day half-life. Click a theme to filter the feed.</p>
+    </div></div>
+    <div class="theme-bars" id="theme-bars"></div>
+    <div class="theme-grid" id="theme-grid"></div>
+  </section>
+
+  <section class="card span-5">
+    <div class="card-head">
+      <div>
+        <h2>Morning briefing</h2>
+        <p class="sub">Command A+ with reasoning on, given the top documents for each theme. Every claim is cited.</p>
+      </div>
+      <button class="btn" id="regen">Regenerate</button>
+    </div>
+    <div id="briefing" class="prose"><div class="skeleton">Generating briefing…</div></div>
+  </section>
+
+  <section class="card span-7">
+    <div class="card-head"><div>
+      <h2>Ask the desk</h2>
+      <p class="sub">A Command A+ agent that can search the news and 10-K indexes, pull price stats, compare assets, score theme exposure and diff risk factors. You can see every tool call it makes.</p>
+    </div></div>
+    <form class="ask" id="ask-form">
+      <input id="ask-input" placeholder="e.g. Which of my holdings is most exposed to a further rise in yields?" autocomplete="off">
+      <button class="btn primary" type="submit">Ask</button>
+    </form>
+    <div class="suggest" id="suggest"></div>
+    <div id="answers"></div>
+  </section>
+
+  <section class="card span-5">
+    <div class="card-head"><div>
+      <h2>Signal feed</h2>
+      <p class="sub">Sentiment, event type and materiality come from Command A+ structured outputs. The search box runs a semantic search across news and filings.</p>
+    </div></div>
+    <form class="search" id="search-form">
+      <input id="search-input" placeholder="Semantic search, e.g. “who is lending money to AI labs?”" autocomplete="off">
+    </form>
+    <div id="filter-pill" class="filter-pill"></div>
+    <div class="feed" id="feed"></div>
+  </section>
+
+  <section class="card span-8">
+    <div class="card-head">
+      <div>
+        <h2>10-K risk drift</h2>
+        <p class="sub">Each Item 1A paragraph is embedded with Embed 5 Pro and matched against the prior year's 10-K. Paragraphs with no close match from last year are new risks.</p>
+      </div>
+      <select id="drift-ticker" style="flex:0 0 140px"></select>
+    </div>
+    <div id="drift"></div>
+  </section>
+
+  <section class="card span-4">
+    <div class="card-head"><div>
+      <h2>Under the hood</h2>
+      <p class="sub">API calls per model in this session, and index size after int8 and binary quantization.</p>
+    </div></div>
+    <div id="telemetry"></div>
+    <div id="index-stats" style="margin-top:12px"></div>
+    <div class="log mono" id="log"></div>
+  </section>
+</main>
+
+<div id="pop"></div>
+<div id="tip"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "_note": "FICTIONAL companies written for the offline demo. These are not real SEC filings. Live mode pulls real Item 1A sections from SEC EDGAR.",
+  "filings": [
+    {
+      "ticker": "NWND", "company": "Northwind Semiconductor (fictional)", "fiscal_year": "2026", "filed": "2026-08-14",
+      "chunks": [
+        "Customer concentration in AI infrastructure. A small number of hyperscale cloud providers and AI research laboratories accounted for 71% of our revenue in fiscal 2026. Several of these customers finance their purchases through vendor-financing and chip-leasing arrangements, including arrangements in which we or our partners extend credit. If the capital markets for AI companies tighten, or if an anticipated initial public offering of a major customer is delayed, orders could be cancelled or deferred and we could incur credit losses.",
+        "Vendor financing and credit exposure. During fiscal 2026 we began providing lease and loan facilities to certain customers to support deployment of our accelerators. These facilities expose us to the credit risk of companies with limited operating histories and negative cash flow, and their value depends on the residual value of hardware that may become obsolete quickly.",
+        "Rising interest rates. The Federal Reserve resumed raising interest rates in 2026 and long-term Treasury yields reached their highest levels in nearly two decades. Higher rates increase the cost of our variable-rate debt, reduce the present value of long-dated customer commitments, and may cause customers to slow data-center construction that depends on project financing.",
+        "Energy costs and Middle East conflict. Our fabrication partners and our customers' data centers are energy intensive. Escalating conflict in the Middle East has raised crude oil and natural gas prices and the cost of electricity in several regions where we operate. Sustained energy price increases could raise our costs, delay customer data-center projects that cannot secure power, and disrupt shipping routes for materials.",
+        "High-bandwidth memory supply. Our accelerators depend on high-bandwidth memory from a limited number of suppliers. Memory suppliers have entered into multi-year supply agreements through 2030 with other customers and have raised prices significantly. If we cannot secure sufficient HBM at acceptable prices, we may be unable to meet demand and our gross margins could decline.",
+        "Export controls. The U.S. government has expanded export restrictions on advanced computing products, and foreign governments have imposed retaliatory export suspensions on certain critical minerals. These measures could prevent us from selling products in certain markets and could disrupt our supply of gallium, germanium and rare earth materials.",
+        "Dependence on third-party foundries. We do not own manufacturing facilities and rely on a limited number of foundries, most of which are located in Asia. Capacity constraints, natural disasters, or geopolitical tension affecting these regions could disrupt our supply and materially harm our business."
+      ]
+    },
+    {
+      "ticker": "NWND", "company": "Northwind Semiconductor (fictional)", "fiscal_year": "2025", "filed": "2025-08-13",
+      "chunks": [
+        "Customer concentration. A limited number of cloud service providers accounted for 58% of our revenue in fiscal 2025. The loss of, or a significant reduction in orders from, any of these customers could materially harm our results.",
+        "Declining average selling prices. The semiconductor industry is characterised by declining average selling prices over product life cycles. Oversupply of memory and logic products in fiscal 2025 led to price reductions, and continued price erosion could reduce our margins.",
+        "Inventory and excess capacity. Following the industry downturn, we and our customers held elevated levels of inventory. If demand does not recover as expected, we may be required to record inventory write-downs and our utilisation of committed foundry capacity could be low.",
+        "Interest rate and financing conditions. Changes in interest rates could affect our investment income and the cost of any future borrowings. We currently expect interest rates to decline gradually, which would modestly reduce interest income on our cash balances.",
+        "Export controls. The U.S. government has imposed export restrictions on advanced computing products to certain countries. These measures could prevent us from selling products in certain markets.",
+        "Dependence on third-party foundries. We do not own manufacturing facilities and rely on a limited number of foundries, most of which are located in Asia. Capacity constraints, natural disasters, or geopolitical tension affecting these regions could disrupt our supply and materially harm our business."
+      ]
+    },
+    {
+      "ticker": "HBRO", "company": "Harbor Outfitters (fictional)", "fiscal_year": "2026", "filed": "2026-07-29",
+      "chunks": [
+        "Weakening consumer demand. Our results depend on discretionary consumer spending. In fiscal 2026 consumers faced higher borrowing costs as credit card and home-equity rates rose, elevated fuel prices, and slower job creation. Personal income growth has lagged spending, and a depletion of household savings could cause a sharp decline in demand for our apparel and footwear.",
+        "Fuel and freight costs. A significant increase in crude oil and diesel prices, including as a result of conflict in the Middle East, raises our inbound freight, distribution and store operating costs. Diesel prices reached record levels in 2026, and we may be unable to pass these costs on to customers.",
+        "Restructuring and workforce reductions. We announced workforce reductions and store closures in fiscal 2026. These actions may not achieve the anticipated savings, could disrupt operations, and may harm employee morale and our ability to retain key talent.",
+        "Tariffs and trade policy. Most of our products are manufactured outside the United States. Tariffs on imports from our sourcing countries have increased our costs, and further changes in trade policy could require us to move production or raise prices.",
+        "Foreign currency. A stronger U.S. dollar reduces the dollar value of our international sales. The euro declined to multi-month lows against the dollar in 2026, and continued dollar strength would adversely affect our reported revenue and margins.",
+        "Brand and competition. The apparel and footwear industry is highly competitive. If we fail to anticipate changing consumer preferences or if competitors launch more successful products, our market share and margins could decline."
+      ]
+    },
+    {
+      "ticker": "HBRO", "company": "Harbor Outfitters (fictional)", "fiscal_year": "2025", "filed": "2025-07-30",
+      "chunks": [
+        "Consumer demand. Our results depend on discretionary consumer spending, which can be affected by economic conditions, employment levels, and consumer confidence.",
+        "Tariffs and trade policy. Most of our products are manufactured outside the United States. Tariffs on imports from our sourcing countries have increased our costs, and further changes in trade policy could require us to move production or raise prices.",
+        "Digital transformation. We are investing heavily in our direct-to-consumer e-commerce platform. If these investments do not generate expected returns, or if our systems fail during peak periods, our results could suffer.",
+        "Foreign currency. Fluctuations in exchange rates affect our reported results for international operations.",
+        "Brand and competition. The apparel and footwear industry is highly competitive. If we fail to anticipate changing consumer preferences or if competitors launch more successful products, our market share and margins could decline."
+      ]
+    }
+  ]
+}
